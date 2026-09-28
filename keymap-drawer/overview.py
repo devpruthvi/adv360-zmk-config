@@ -25,7 +25,7 @@ SHORT = {
     "RGB on/off": "RGB", "RGB effect": "Eff", "RGB hue": "Hue", "RGB sat": "Sat",
     "RGB bright": "Bri", "LED power": "LEDs", "USB/BLE": "Out",
     "BT 0": "BT0", "BT 1": "BT1", "BT 2": "BT2", "BT 3": "BT3",
-    "Caps Word": "CapsW", "PAUSE BREAK": "Pause", "PSCRN": "PrtSc", "SLCK": "ScrLk",
+    "Caps Word": "Caps", "PAUSE BREAK": "Pause", "PSCRN": "PrtSc", "SLCK": "ScrLk",
     "VOL DN": "Vol-", "VOL UP": "Vol+", "PREV": "Prev", "NEXT": "Next",
     "STOP": "Stop", "PP": "Play", "MUTE": "Mute", "APP": "Menu",
     "PG DN": "PgDn", "PG UP": "PgUp", "HOME": "Home", "END": "End", "INS": "Ins",

@@ -341,35 +341,35 @@ text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">Y</text>
 <text x="31" y="-31" class="key rh tr">Redo</text>
-<text x="-31" y="31" class="key rh bl">RGB</text>
+<text x="-31" y="31" class="key rh bl">Eff</text>
 </g>
 <g transform="translate(954, 108)" class="key rh keypos-23">
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">U</text>
 <text x="31" y="-31" class="key rh tr">Paste</text>
-<text x="-31" y="31" class="key rh bl">Eff</text>
+<text x="-31" y="31" class="key rh bl">Hue</text>
 </g>
 <g transform="translate(1026, 108)" class="key rh keypos-24">
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">I</text>
 <text x="31" y="-31" class="key rh tr">Copy</text>
-<text x="-31" y="31" class="key rh bl">Hue</text>
+<text x="-31" y="31" class="key rh bl">Sat</text>
 </g>
 <g transform="translate(1098, 108)" class="key rh keypos-25">
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">O</text>
 <text x="31" y="-31" class="key rh tr">Cut</text>
-<text x="-31" y="31" class="key rh bl">Sat</text>
+<text x="-31" y="31" class="key rh bl">Bri</text>
 </g>
 <g transform="translate(1170, 126)" class="key rh keypos-26">
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">P</text>
 <text x="31" y="-31" class="key rh tr">Undo</text>
-<text x="-31" y="31" class="key rh bl">Bri</text>
+<text x="-31" y="31" class="key rh bl">RGB</text>
 </g>
 <g transform="translate(1251, 126)" class="key rh keypos-27">
 <rect rx="8" ry="8" x="-42" y="-33" width="84" height="66" class="key rh side"/>
@@ -457,44 +457,44 @@ text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">H</text>
-<text x="31" y="-31" class="key rh tr">CapsW</text>
-<text x="-31" y="31" class="key rh bl">LEDs</text>
+<text x="31" y="-31" class="key rh tr">←</text>
+<text x="-31" y="31" class="key rh bl">Prev</text>
+<text x="31" y="31" class="key rh br">M←</text>
 </g>
 <g transform="translate(954, 180)" class="key rh keypos-41">
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">J</text>
 <text x="-31" y="-31" class="key rh tl">LSHFT</text>
-<text x="31" y="-31" class="key rh tr">←</text>
-<text x="-31" y="31" class="key rh bl">Prev</text>
-<text x="31" y="31" class="key rh br">M←</text>
+<text x="31" y="-31" class="key rh tr">↓</text>
+<text x="-31" y="31" class="key rh bl">Vol-</text>
+<text x="31" y="31" class="key rh br">M↓</text>
 </g>
 <g transform="translate(1026, 180)" class="key rh keypos-42">
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">K</text>
 <text x="-31" y="-31" class="key rh tl">LCTRL</text>
-<text x="31" y="-31" class="key rh tr">↓</text>
-<text x="-31" y="31" class="key rh bl">Vol-</text>
-<text x="31" y="31" class="key rh br">M↓</text>
+<text x="31" y="-31" class="key rh tr">↑</text>
+<text x="-31" y="31" class="key rh bl">Vol+</text>
+<text x="31" y="31" class="key rh br">M↑</text>
 </g>
 <g transform="translate(1098, 180)" class="key rh keypos-43">
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">L</text>
 <text x="-31" y="-31" class="key rh tl">LALT</text>
-<text x="31" y="-31" class="key rh tr">↑</text>
-<text x="-31" y="31" class="key rh bl">Vol+</text>
-<text x="31" y="31" class="key rh br">M↑</text>
+<text x="31" y="-31" class="key rh tr">→</text>
+<text x="-31" y="31" class="key rh bl">Next</text>
+<text x="31" y="31" class="key rh br">M→</text>
 </g>
 <g transform="translate(1170, 198)" class="key rh keypos-44">
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">;</text>
 <text x="-31" y="-31" class="key rh tl">LGUI</text>
-<text x="31" y="-31" class="key rh tr">→</text>
-<text x="-31" y="31" class="key rh bl">Next</text>
-<text x="31" y="31" class="key rh br">M→</text>
+<text x="31" y="-31" class="key rh tr">Caps</text>
+<text x="-31" y="31" class="key rh bl">LEDs</text>
 </g>
 <g transform="translate(1251, 198)" class="key rh keypos-45">
 <rect rx="8" ry="8" x="-42" y="-33" width="84" height="66" class="key rh side"/>
@@ -562,42 +562,42 @@ text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">N</text>
-<text x="31" y="-31" class="key rh tr">Ins</text>
-<text x="-31" y="31" class="key rh bl">Out</text>
+<text x="31" y="-31" class="key rh tr">Home</text>
+<text x="-31" y="31" class="key rh bl">BT0</text>
+<text x="31" y="31" class="key rh br">W←</text>
 </g>
 <g transform="translate(954, 252)" class="key rh keypos-55">
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">M</text>
-<text x="31" y="-31" class="key rh tr">Home</text>
-<text x="-31" y="31" class="key rh bl">BT0</text>
-<text x="31" y="31" class="key rh br">W←</text>
+<text x="31" y="-31" class="key rh tr">PgDn</text>
+<text x="-31" y="31" class="key rh bl">BT1</text>
+<text x="31" y="31" class="key rh br">W↓</text>
 </g>
 <g transform="translate(1026, 252)" class="key rh keypos-56">
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">,</text>
-<text x="31" y="-31" class="key rh tr">PgDn</text>
-<text x="-31" y="31" class="key rh bl">BT1</text>
-<text x="31" y="31" class="key rh br">W↓</text>
+<text x="31" y="-31" class="key rh tr">PgUp</text>
+<text x="-31" y="31" class="key rh bl">BT2</text>
+<text x="31" y="31" class="key rh br">W↑</text>
 </g>
 <g transform="translate(1098, 252)" class="key rh keypos-57">
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh"/>
 <text x="0" y="-6" class="key rh tap">.</text>
 <text x="-31" y="-31" class="key rh tl">RALT</text>
-<text x="31" y="-31" class="key rh tr">PgUp</text>
-<text x="-31" y="31" class="key rh bl">BT2</text>
-<text x="31" y="31" class="key rh br">W↑</text>
+<text x="31" y="-31" class="key rh tr">End</text>
+<text x="-31" y="31" class="key rh bl">BT3</text>
+<text x="31" y="31" class="key rh br">W→</text>
 </g>
 <g transform="translate(1170, 270)" class="key rh to-button keypos-58">
 <rect rx="8" ry="8" x="-33" y="-33" width="66" height="66" class="key rh to-button side"/>
 <rect rx="4" ry="4" x="-27" y="-30" width="54" height="48" class="key rh to-button"/>
 <text x="0" y="-6" class="key rh to-button tap">/</text>
 <text x="-31" y="-31" class="key rh to-button tl">button</text>
-<text x="31" y="-31" class="key rh to-button tr">End</text>
-<text x="-31" y="31" class="key rh to-button bl">BT3</text>
-<text x="31" y="31" class="key rh to-button br">W→</text>
+<text x="31" y="-31" class="key rh to-button tr">Ins</text>
+<text x="-31" y="31" class="key rh to-button bl">Out</text>
 </g>
 <g transform="translate(1251, 270)" class="key rh keypos-59">
 <rect rx="8" ry="8" x="-42" y="-33" width="84" height="66" class="key rh side"/>

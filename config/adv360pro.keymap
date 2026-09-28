@@ -63,8 +63,6 @@ ___ ___ ___ ___ ___             H0 H1 H2  H3 H4 H5           ___ ___ ___ ___ ___
 ZMK_HOLD_TAP(hml, HRM_PROPS hold-trigger-key-positions = <KEYS_R THUMBS>;)
 ZMK_HOLD_TAP(hmr, HRM_PROPS hold-trigger-key-positions = <KEYS_L THUMBS>;)
 
-ZMK_HOLD_TAP(u_mt, flavor = "tap-preferred"; tapping-term-ms = <U_TAPPING_TERM>; bindings = <&kp>, <&kp>;)
-
 // Thumb layer-taps; quick-tap lets tap-then-hold repeat the key
 ZMK_HOLD_TAP(u_lt,
     flavor = "tap-preferred";
@@ -126,7 +124,7 @@ XXX        &kp GRAVE     &kp CAPS      &kp LEFT       &kp RIGHT            THUMB
 ZMK_LAYER(extra, ADV360_LAYER(
 &kp Q,              &kp W,              &kp F,              &kp P,              &kp B,              &kp J,              &kp L,              &kp U,              &kp Y,              &kp SQT,
 &hml LGUI A,        &hml LALT R,        &hml LCTRL S,       &hml LSHFT T,       &kp G,              &kp M,              &hmr LSHFT N,       &hmr LCTRL E,       &hmr LALT I,        &hmr LGUI O,
-&u_lt BUTTON Z,     &u_mt RALT X,       &kp C,              &kp D,              &kp V,              &kp K,              &kp H,              &kp COMMA,          &u_mt RALT DOT,     &u_lt BUTTON SLASH,
+&u_lt BUTTON Z,     &hml RALT X,       &kp C,              &kp D,              &kp V,              &kp K,              &kp H,              &kp COMMA,          &hmr RALT DOT,     &u_lt BUTTON SLASH,
 &u_lt NAV ESC,      &u_lt MEDIA BSPC,   &u_lt MOUSE TAB,    &u_lt FUN DEL,      &u_lt NUM RET,      &u_lt SYM SPACE
 ))
 
@@ -147,22 +145,22 @@ U_UND,     U_CUT,     U_CPY,     U_PST,     U_RDO,     U_RDO,     U_PST,     U_C
 // No bootloader key here: it was too easy to hit by accident
 ZMK_LAYER(nav, ADV360_LAYER(
 XXX,          &u_to_tap,    &u_to_extra,  &u_to_base,   XXX,          U_RDO,        U_PST,        U_CPY,        U_CUT,        U_UND,
-&kp LGUI,     &kp LALT,     &kp LCTRL,    &kp LSHFT,    XXX,          &u_caps_word, &kp LEFT,     &kp DOWN,     &kp UP,       &kp RIGHT,
-XXX,          &kp RALT,     &u_to_num,    &u_to_nav,    XXX,          &kp INS,      &kp HOME,     &kp PG_DN,    &kp PG_UP,    &kp END,
+&kp LGUI,     &kp LALT,     &kp LCTRL,    &kp LSHFT,    XXX,          &kp LEFT,     &kp DOWN,     &kp UP,       &kp RIGHT,    &u_caps_word,
+XXX,          &kp RALT,     &u_to_num,    &u_to_nav,    XXX,          &kp HOME,     &kp PG_DN,    &kp PG_UP,    &kp END,      &kp INS,
 XXX,          XXX,          XXX,          &kp RET,      &kp BSPC,     &kp DEL
 ))
 
 ZMK_LAYER(mouse, ADV360_LAYER(
 &u_boot,         &u_to_tap,       &u_to_extra,     &u_to_base,      XXX,             U_RDO,           U_PST,           U_CPY,           U_CUT,           U_UND,
-&kp LGUI,        &kp LALT,        &kp LCTRL,       &kp LSHFT,       XXX,             XXX,             &mmv MOVE_LEFT,  &mmv MOVE_DOWN,  &mmv MOVE_UP,    &mmv MOVE_RIGHT,
-XXX,             &kp RALT,        &u_to_sym,       &u_to_mouse,     XXX,             XXX,             &msc SCRL_LEFT,  &msc SCRL_DOWN,  &msc SCRL_UP,    &msc SCRL_RIGHT,
+&kp LGUI,        &kp LALT,        &kp LCTRL,       &kp LSHFT,       XXX,             &mmv MOVE_LEFT,  &mmv MOVE_DOWN,  &mmv MOVE_UP,    &mmv MOVE_RIGHT, XXX,
+XXX,             &kp RALT,        &u_to_sym,       &u_to_mouse,     XXX,             &msc SCRL_LEFT,  &msc SCRL_DOWN,  &msc SCRL_UP,    &msc SCRL_RIGHT, XXX,
 XXX,             XXX,             XXX,             &mkp MB2,        &mkp MB1,        &mkp MB3
 ))
 
 ZMK_LAYER(media, ADV360_LAYER(
-&u_boot,           &u_to_tap,         &u_to_extra,       &u_to_base,        &studio_unlock,    &rgb_ug RGB_TOG,   &rgb_ug RGB_EFF,   &rgb_ug RGB_HUI,   &rgb_ug RGB_SAI,   &rgb_ug RGB_BRI,
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         XXX,               &ext_power EP_TOG, &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,
-XXX,               &kp RALT,          &u_to_fun,         &u_to_media,       XXX,               &u_out_tog,        &u_bt_sel_0,       &u_bt_sel_1,       &u_bt_sel_2,       &u_bt_sel_3,
+&u_boot,           &u_to_tap,         &u_to_extra,       &u_to_base,        &studio_unlock,    &rgb_ug RGB_EFF,   &rgb_ug RGB_HUI,   &rgb_ug RGB_SAI,   &rgb_ug RGB_BRI,   &rgb_ug RGB_TOG,
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         XXX,               &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        &ext_power EP_TOG,
+XXX,               &kp RALT,          &u_to_fun,         &u_to_media,       XXX,               &u_bt_sel_0,       &u_bt_sel_1,       &u_bt_sel_2,       &u_bt_sel_3,       &u_out_tog,
 XXX,               XXX,               XXX,               &kp C_STOP,        &kp C_PP,          &kp C_MUTE
 ))
 

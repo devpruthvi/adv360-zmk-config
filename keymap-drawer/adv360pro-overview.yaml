@@ -64,23 +64,23 @@ layers:
   - t: Y
     type: rh
     tr: Redo
-    bl: RGB
+    bl: Eff
   - t: U
     type: rh
     tr: Paste
-    bl: Eff
+    bl: Hue
   - t: I
     type: rh
     tr: Copy
-    bl: Hue
+    bl: Sat
   - t: O
     type: rh
     tr: Cut
-    bl: Sat
+    bl: Bri
   - t: P
     type: rh
     tr: Undo
-    bl: Bri
+    bl: RGB
   - t: \
     type: rh
   - t: ESC
@@ -128,32 +128,32 @@ layers:
     type: rh
   - t: H
     type: rh
-    tr: CapsW
-    bl: LEDs
-  - t: J
-    type: rh
-    tl: LSHFT
     tr: ←
     bl: Prev
     br: M←
-  - t: K
+  - t: J
     type: rh
-    tl: LCTRL
+    tl: LSHFT
     tr: ↓
     bl: Vol-
     br: M↓
-  - t: L
+  - t: K
     type: rh
-    tl: LALT
+    tl: LCTRL
     tr: ↑
     bl: Vol+
     br: M↑
-  - t: ;
+  - t: L
     type: rh
-    tl: LGUI
+    tl: LALT
     tr: →
     bl: Next
     br: M→
+  - t: ;
+    type: rh
+    tl: LGUI
+    tr: Caps
+    bl: LEDs
   - t: ''''
     type: rh
   - t: LSHFT
@@ -191,30 +191,30 @@ layers:
     type: rh
   - t: N
     type: rh
-    tr: Ins
-    bl: Out
-  - t: M
-    type: rh
     tr: Home
     bl: BT0
     br: W←
-  - t: ','
+  - t: M
     type: rh
     tr: PgDn
     bl: BT1
     br: W↓
-  - t: .
+  - t: ','
     type: rh
-    tl: RALT
     tr: PgUp
     bl: BT2
     br: W↑
-  - t: /
-    type: rh to-button
-    tl: button
+  - t: .
+    type: rh
+    tl: RALT
     tr: End
     bl: BT3
     br: W→
+  - t: /
+    type: rh to-button
+    tl: button
+    tr: Ins
+    bl: Out
   - t: RSHFT
     type: rh
   - t: ''

@@ -349,11 +349,11 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: Caps Word, h: ⇧ Caps}
   - LEFT
   - DOWN
   - UP
   - RIGHT
+  - {t: Caps Word, h: ⇧ Caps}
   - {type: trans}
   - {type: trans}
   - ''
@@ -363,11 +363,11 @@ layers:
   - ''
   - {type: trans}
   - {type: trans}
-  - INS
   - HOME
   - PG DN
   - PG UP
   - END
+  - INS
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -426,11 +426,11 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - ''
   - Mouse ←
   - Mouse ↓
   - Mouse ↑
   - Mouse →
+  - ''
   - {type: trans}
   - {type: trans}
   - ''
@@ -440,11 +440,11 @@ layers:
   - ''
   - {type: trans}
   - {type: trans}
-  - ''
   - Wheel ←
   - Wheel ↓
   - Wheel ↑
   - Wheel →
+  - ''
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -485,11 +485,11 @@ layers:
   - Studio
   - {type: trans}
   - {type: trans}
-  - RGB on/off
   - RGB effect
   - RGB hue
   - RGB sat
   - RGB bright
+  - RGB on/off
   - {type: trans}
   - {type: trans}
   - LGUI
@@ -503,11 +503,11 @@ layers:
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - LED power
   - PREV
   - VOL DN
   - VOL UP
   - NEXT
+  - LED power
   - {type: trans}
   - {type: trans}
   - ''
@@ -517,11 +517,11 @@ layers:
   - ''
   - {type: trans}
   - {type: trans}
-  - {t: USB/BLE, h: ⇧ USB}
   - {t: BT 0, h: ⇧ clear}
   - {t: BT 1, h: ⇧ clear}
   - {t: BT 2, h: ⇧ clear}
   - {t: BT 3, h: ⇧ clear}
+  - {t: USB/BLE, h: ⇧ USB}
   - {type: trans}
   - {type: trans}
   - {type: trans}

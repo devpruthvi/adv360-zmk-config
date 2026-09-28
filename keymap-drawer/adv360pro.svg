@@ -1867,30 +1867,30 @@ text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
 <g transform="translate(686, 140)" class="key keypos-40">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
-<text x="0" y="-6" class="key tap">
-<tspan x="0" dy="-0.9em">Caps</tspan><tspan x="0" dy="1.2em">Word</tspan>
-</text>
-<text x="0" y="23" class="key hold">⇧ Caps</text>
+<text x="0" y="-6" class="key tap">LEFT</text>
 </g>
 <g transform="translate(742, 140)" class="key keypos-41">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
-<text x="0" y="-6" class="key tap">LEFT</text>
+<text x="0" y="-6" class="key tap">DOWN</text>
 </g>
 <g transform="translate(798, 140)" class="key keypos-42">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
-<text x="0" y="-6" class="key tap">DOWN</text>
+<text x="0" y="-6" class="key tap">UP</text>
 </g>
 <g transform="translate(854, 140)" class="key keypos-43">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
-<text x="0" y="-6" class="key tap">UP</text>
+<text x="0" y="-6" class="key tap">RIGHT</text>
 </g>
 <g transform="translate(910, 154)" class="key keypos-44">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
-<text x="0" y="-6" class="key tap">RIGHT</text>
+<text x="0" y="-6" class="key tap">
+<tspan x="0" dy="-0.9em">Caps</tspan><tspan x="0" dy="1.2em">Word</tspan>
+</text>
+<text x="0" y="23" class="key hold">⇧ Caps</text>
 </g>
 <g transform="translate(973, 154)" class="key trans keypos-45">
 <rect rx="8" ry="8" x="-32" y="-25" width="64" height="50" class="key trans side"/>
@@ -1936,31 +1936,31 @@ text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
 <g transform="translate(686, 196)" class="key keypos-54">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
-<text x="0" y="-6" class="key tap">INS</text>
-</g>
-<g transform="translate(742, 196)" class="key keypos-55">
-<rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
-<rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">HOME</text>
 </g>
-<g transform="translate(798, 196)" class="key keypos-56">
+<g transform="translate(742, 196)" class="key keypos-55">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.6em">PG</tspan><tspan x="0" dy="1.2em">DN</tspan>
 </text>
 </g>
-<g transform="translate(854, 196)" class="key keypos-57">
+<g transform="translate(798, 196)" class="key keypos-56">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.6em">PG</tspan><tspan x="0" dy="1.2em">UP</tspan>
 </text>
 </g>
-<g transform="translate(910, 210)" class="key keypos-58">
+<g transform="translate(854, 196)" class="key keypos-57">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">END</text>
+</g>
+<g transform="translate(910, 210)" class="key keypos-58">
+<rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
+<rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
+<text x="0" y="-6" class="key tap">INS</text>
 </g>
 <g transform="translate(973, 210)" class="key trans keypos-59">
 <rect rx="8" ry="8" x="-32" y="-25" width="64" height="50" class="key trans side"/>
@@ -2218,34 +2218,34 @@ text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
 <g transform="translate(686, 140)" class="key keypos-40">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
-</g>
-<g transform="translate(742, 140)" class="key keypos-41">
-<rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
-<rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.6em">Mouse</tspan><tspan x="0" dy="1.2em">←</tspan>
 </text>
 </g>
-<g transform="translate(798, 140)" class="key keypos-42">
+<g transform="translate(742, 140)" class="key keypos-41">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.6em">Mouse</tspan><tspan x="0" dy="1.2em">↓</tspan>
 </text>
 </g>
-<g transform="translate(854, 140)" class="key keypos-43">
+<g transform="translate(798, 140)" class="key keypos-42">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.6em">Mouse</tspan><tspan x="0" dy="1.2em">↑</tspan>
 </text>
 </g>
-<g transform="translate(910, 154)" class="key keypos-44">
+<g transform="translate(854, 140)" class="key keypos-43">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.6em">Mouse</tspan><tspan x="0" dy="1.2em">→</tspan>
 </text>
+</g>
+<g transform="translate(910, 154)" class="key keypos-44">
+<rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
+<rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 </g>
 <g transform="translate(973, 154)" class="key trans keypos-45">
 <rect rx="8" ry="8" x="-32" y="-25" width="64" height="50" class="key trans side"/>
@@ -2291,34 +2291,34 @@ text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
 <g transform="translate(686, 196)" class="key keypos-54">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
-</g>
-<g transform="translate(742, 196)" class="key keypos-55">
-<rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
-<rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.6em">Wheel</tspan><tspan x="0" dy="1.2em">←</tspan>
 </text>
 </g>
-<g transform="translate(798, 196)" class="key keypos-56">
+<g transform="translate(742, 196)" class="key keypos-55">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.6em">Wheel</tspan><tspan x="0" dy="1.2em">↓</tspan>
 </text>
 </g>
-<g transform="translate(854, 196)" class="key keypos-57">
+<g transform="translate(798, 196)" class="key keypos-56">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.6em">Wheel</tspan><tspan x="0" dy="1.2em">↑</tspan>
 </text>
 </g>
-<g transform="translate(910, 210)" class="key keypos-58">
+<g transform="translate(854, 196)" class="key keypos-57">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.6em">Wheel</tspan><tspan x="0" dy="1.2em">→</tspan>
 </text>
+</g>
+<g transform="translate(910, 210)" class="key keypos-58">
+<rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
+<rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 </g>
 <g transform="translate(973, 210)" class="key trans keypos-59">
 <rect rx="8" ry="8" x="-32" y="-25" width="64" height="50" class="key trans side"/>
@@ -2503,35 +2503,35 @@ text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">on/off</tspan>
+<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">effect</tspan>
 </text>
 </g>
 <g transform="translate(742, 84)" class="key keypos-23">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">effect</tspan>
+<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">hue</tspan>
 </text>
 </g>
 <g transform="translate(798, 84)" class="key keypos-24">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">hue</tspan>
+<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">sat</tspan>
 </text>
 </g>
 <g transform="translate(854, 84)" class="key keypos-25">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">sat</tspan>
+<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">bright</tspan>
 </text>
 </g>
 <g transform="translate(910, 98)" class="key keypos-26">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
-<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">bright</tspan>
+<tspan x="0" dy="-0.6em">RGB</tspan><tspan x="0" dy="1.2em">on/off</tspan>
 </text>
 </g>
 <g transform="translate(973, 98)" class="key trans keypos-27">
@@ -2593,33 +2593,33 @@ text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
 <g transform="translate(686, 140)" class="key keypos-40">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
-<text x="0" y="-6" class="key tap">
-<tspan x="0" dy="-0.6em">LED</tspan><tspan x="0" dy="1.2em">power</tspan>
-</text>
-</g>
-<g transform="translate(742, 140)" class="key keypos-41">
-<rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
-<rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">PREV</text>
 </g>
-<g transform="translate(798, 140)" class="key keypos-42">
+<g transform="translate(742, 140)" class="key keypos-41">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.6em">VOL</tspan><tspan x="0" dy="1.2em">DN</tspan>
 </text>
 </g>
-<g transform="translate(854, 140)" class="key keypos-43">
+<g transform="translate(798, 140)" class="key keypos-42">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.6em">VOL</tspan><tspan x="0" dy="1.2em">UP</tspan>
 </text>
 </g>
-<g transform="translate(910, 154)" class="key keypos-44">
+<g transform="translate(854, 140)" class="key keypos-43">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">NEXT</text>
+</g>
+<g transform="translate(910, 154)" class="key keypos-44">
+<rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
+<rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
+<text x="0" y="-6" class="key tap">
+<tspan x="0" dy="-0.6em">LED</tspan><tspan x="0" dy="1.2em">power</tspan>
+</text>
 </g>
 <g transform="translate(973, 154)" class="key trans keypos-45">
 <rect rx="8" ry="8" x="-32" y="-25" width="64" height="50" class="key trans side"/>
@@ -2665,18 +2665,12 @@ text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
 <g transform="translate(686, 196)" class="key keypos-54">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
-<text x="0" y="-6" class="key tap">USB/BLE</text>
-<text x="0" y="23" class="key hold">⇧ USB</text>
-</g>
-<g transform="translate(742, 196)" class="key keypos-55">
-<rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
-<rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.9em">BT</tspan><tspan x="0" dy="1.2em">0</tspan>
 </text>
 <text x="0" y="23" class="key hold">⇧ clear</text>
 </g>
-<g transform="translate(798, 196)" class="key keypos-56">
+<g transform="translate(742, 196)" class="key keypos-55">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
@@ -2684,7 +2678,7 @@ text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
 </text>
 <text x="0" y="23" class="key hold">⇧ clear</text>
 </g>
-<g transform="translate(854, 196)" class="key keypos-57">
+<g transform="translate(798, 196)" class="key keypos-56">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
@@ -2692,13 +2686,19 @@ text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
 </text>
 <text x="0" y="23" class="key hold">⇧ clear</text>
 </g>
-<g transform="translate(910, 210)" class="key keypos-58">
+<g transform="translate(854, 196)" class="key keypos-57">
 <rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
 <rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
 <text x="0" y="-6" class="key tap">
 <tspan x="0" dy="-0.9em">BT</tspan><tspan x="0" dy="1.2em">3</tspan>
 </text>
 <text x="0" y="23" class="key hold">⇧ clear</text>
+</g>
+<g transform="translate(910, 210)" class="key keypos-58">
+<rect rx="8" ry="8" x="-25" y="-25" width="50" height="50" class="key side"/>
+<rect rx="4" ry="4" x="-19" y="-22" width="38" height="32" class="key"/>
+<text x="0" y="-6" class="key tap">USB/BLE</text>
+<text x="0" y="23" class="key hold">⇧ USB</text>
 </g>
 <g transform="translate(973, 210)" class="key trans keypos-59">
 <rect rx="8" ry="8" x="-32" y="-25" width="64" height="50" class="key trans side"/>
