@@ -44,6 +44,9 @@ parse_config:
     "&rgb_ug RGB_SAI": "RGB sat"
     "&rgb_ug RGB_BRI": "RGB bright"
     "&ext_power EP_TOG": "LED power"
+    "&bl BL_TOG": "Backlight"
+    "&bl BL_DEC": "Backlight −"
+    "&bl BL_INC": "Backlight +"
   # Leave transparent keys blank instead of ▽
   trans_legend: {t: "", type: trans}
 

@@ -5,6 +5,7 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/backlight.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
@@ -159,8 +160,8 @@ XXX,             XXX,             XXX,             &mkp MB2,        &mkp MB1,   
 
 ZMK_LAYER(media, ADV360_LAYER(
 &u_boot,           &u_to_tap,         &u_to_extra,       &u_to_base,        &studio_unlock,    &rgb_ug RGB_EFF,   &rgb_ug RGB_HUI,   &rgb_ug RGB_SAI,   &rgb_ug RGB_BRI,   &rgb_ug RGB_TOG,
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         XXX,               &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        &ext_power EP_TOG,
-XXX,               &kp RALT,          &u_to_fun,         &u_to_media,       XXX,               &u_bt_sel_0,       &u_bt_sel_1,       &u_bt_sel_2,       &u_bt_sel_3,       &u_out_tog,
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         &bl BL_TOG,        &kp C_PREV,        &kp C_VOL_DN,      &kp C_VOL_UP,      &kp C_NEXT,        &ext_power EP_TOG,
+&bl BL_DEC,        &kp RALT,          &u_to_fun,         &u_to_media,       &bl BL_INC,        &u_bt_sel_0,       &u_bt_sel_1,       &u_bt_sel_2,       &u_bt_sel_3,       &u_out_tog,
 XXX,               XXX,               XXX,               &kp C_STOP,        &kp C_PP,          &kp C_MUTE
 ))
 

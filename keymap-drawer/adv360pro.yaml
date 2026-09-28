@@ -496,7 +496,7 @@ layers:
   - LALT
   - LCTRL
   - LSHFT
-  - ''
+  - Backlight
   - {type: trans}
   - {type: trans}
   - {type: trans}
@@ -510,11 +510,11 @@ layers:
   - LED power
   - {type: trans}
   - {type: trans}
-  - ''
+  - Backlight −
   - RALT
   - {t: Fun, h: 2× tap}
   - {t: Media, h: 2× tap}
-  - ''
+  - Backlight +
   - {type: trans}
   - {type: trans}
   - {t: BT 0, h: ⇧ clear}
