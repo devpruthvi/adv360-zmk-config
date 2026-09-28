@@ -58,6 +58,8 @@ def main():
         # Home-row mods and layer names move to the top-left corner
         if hold:
             key["tl"] = hold
+            if hold in layers:
+                key["type"] += f" to-{hold}"
         corners = LEFT_CORNERS if hand == "lh" else RIGHT_CORNERS
         for corner, layer in corners.items():
             value, _, _ = legend(layers[layer][pos])

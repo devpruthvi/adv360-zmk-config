@@ -159,8 +159,8 @@ layers:
   - t: LSHFT
     type: lh
   - t: Z
-    type: lh
-    tl: Button
+    type: lh to-button
+    tl: button
     tr: '~'
     bl: F10
     br: '`'
@@ -210,8 +210,8 @@ layers:
     bl: BT2
     br: W↑
   - t: /
-    type: rh
-    tl: Button
+    type: rh to-button
+    tl: button
     tr: End
     bl: BT3
     br: W→
@@ -228,38 +228,38 @@ layers:
   - t: RIGHT
     type: lh
   - t: ESC
-    type: lh
-    tl: Nav
+    type: lh to-nav
+    tl: nav
     tr: (
     bl: Menu
     br: .
   - t: BSPC
-    type: lh
-    tl: Media
+    type: lh to-media
+    tl: media
     tr: )
     bl: Spc
     br: '0'
   - t: TAB
-    type: lh
-    tl: Mouse
+    type: lh to-mouse
+    tl: mouse
     tr: _
     bl: Tab
     br: '-'
   - t: DEL
-    type: rh
-    tl: Fun
+    type: rh to-fun
+    tl: fun
     tr: Ret
     bl: Stop
     br: Clk R
   - t: RET
-    type: rh
-    tl: Num
+    type: rh to-num
+    tl: num
     tr: Bspc
     bl: Play
     br: Clk L
   - t: SPACE
-    type: rh
-    tl: Sym
+    type: rh to-sym
+    tl: sym
     tr: Del
     bl: Mute
     br: Clk M

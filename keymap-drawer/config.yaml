@@ -46,17 +46,6 @@ parse_config:
     "&ext_power EP_TOG": "LED power"
   # Leave transparent keys blank instead of ▽
   trans_legend: {t: "", type: trans}
-  layer_legend_map:
-    base: Base
-    extra: Colemak
-    tap: Tap
-    button: Button
-    nav: Nav
-    mouse: Mouse
-    media: Media
-    num: Num
-    sym: Sym
-    fun: Fun
 
 draw_config:
   dark_mode: auto
@@ -66,9 +55,13 @@ draw_config:
   key_ry: 8
   inner_pad_w: 3
   inner_pad_h: 3
+  # Taller front face so hold legends sit on it, like Miryoku's front legends
   draw_key_sides: true
+  key_side_pars:
+    rel_y: 6
+    rel_h: 18
   append_colon_to_layer_header: false
-  # One color per layer: title pill, held-key tint, and overview corners
+  # One color per layer: layer names on keys, held-key tint, overview corners
   svg_extra_style: |
     svg.keymap {
       --base: #475569; --extra: #4f46e5; --tap: #64748b; --button: #0284c7;
@@ -89,18 +82,29 @@ draw_config:
     .layer-num { --layer: var(--num); }
     .layer-sym { --layer: var(--sym); }
     .layer-fun { --layer: var(--fun); }
-    .layer-Overview { --layer: var(--text); }
 
-    /* Layer title: bold white text on a pill of the layer color (pills.py adds the rect) */
-    rect.label-bg { fill: var(--layer); }
+    /* Layer title, centered by headings.py */
     text.label {
-      font-size: 17px;
+      font-size: 20px;
       font-weight: 800;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      fill: white;
+      text-anchor: middle;
+      text-transform: capitalize;
+      fill: var(--text);
       stroke: none;
     }
+
+    /* Layer names on keys, on the key's front face in that layer's color */
+    text.layer-activator { text-decoration: none; text-transform: capitalize; font-weight: 800; }
+    a[href="#base"] text { fill: var(--base); }
+    a[href="#extra"] text { fill: var(--extra); }
+    a[href="#tap"] text { fill: var(--tap); }
+    a[href="#button"] text { fill: var(--button); }
+    a[href="#nav"] text { fill: var(--nav); }
+    a[href="#mouse"] text { fill: var(--mouse); }
+    a[href="#media"] text { fill: var(--media); }
+    a[href="#num"] text { fill: var(--num); }
+    a[href="#sym"] text { fill: var(--sym); }
+    a[href="#fun"] text { fill: var(--fun); }
 
     rect.key { fill: var(--key-bg); stroke: var(--key-border); }
     rect.side { filter: brightness(93%); }
@@ -119,6 +123,14 @@ draw_config:
     .layer-Overview .rh text.tr { fill: var(--nav); }
     .layer-Overview .rh text.bl { fill: var(--media); }
     .layer-Overview .rh text.br { fill: var(--mouse); }
+    .layer-Overview [class*=" to-"] text.tl { text-transform: capitalize; font-weight: 800; }
+    .layer-Overview .to-nav text.tl { fill: var(--nav); }
+    .layer-Overview .to-mouse text.tl { fill: var(--mouse); }
+    .layer-Overview .to-media text.tl { fill: var(--media); }
+    .layer-Overview .to-num text.tl { fill: var(--num); }
+    .layer-Overview .to-sym text.tl { fill: var(--sym); }
+    .layer-Overview .to-fun text.tl { fill: var(--fun); }
+    .layer-Overview .to-button text.tl { fill: var(--button); }
 
     @media (prefers-color-scheme: dark) {
       svg.keymap {
@@ -126,5 +138,4 @@ draw_config:
         --base: #64748b; --tap: #475569;
       }
       rect.key { fill: var(--key-bg); stroke: var(--key-border); }
-      .layer-Overview { --layer: #334155; }
     }

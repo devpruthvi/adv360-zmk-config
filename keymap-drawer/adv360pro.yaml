@@ -48,7 +48,7 @@ layers:
   - {t: ;, h: LGUI}
   - ''''
   - LSHFT
-  - {t: Z, h: Button}
+  - {t: Z, h: button}
   - {t: X, h: RALT}
   - C
   - V
@@ -59,19 +59,19 @@ layers:
   - M
   - ','
   - {t: ., h: RALT}
-  - {t: /, h: Button}
+  - {t: /, h: button}
   - RSHFT
   - ''
   - '`'
   - CAPS
   - LEFT
   - RIGHT
-  - {t: ESC, h: Nav}
-  - {t: BSPC, h: Media}
-  - {t: TAB, h: Mouse}
-  - {t: DEL, h: Fun}
-  - {t: RET, h: Num}
-  - {t: SPACE, h: Sym}
+  - {t: ESC, h: nav}
+  - {t: BSPC, h: media}
+  - {t: TAB, h: mouse}
+  - {t: DEL, h: fun}
+  - {t: RET, h: num}
+  - {t: SPACE, h: sym}
   - UP
   - DOWN
   - '['
@@ -125,7 +125,7 @@ layers:
   - {t: O, h: LGUI}
   - {type: trans}
   - {type: trans}
-  - {t: Z, h: Button}
+  - {t: Z, h: button}
   - {t: X, h: RALT}
   - C
   - D
@@ -136,19 +136,19 @@ layers:
   - H
   - ','
   - {t: ., h: RALT}
-  - {t: /, h: Button}
+  - {t: /, h: button}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
   - {type: trans}
-  - {t: ESC, h: Nav}
-  - {t: BSPC, h: Media}
-  - {t: TAB, h: Mouse}
-  - {t: DEL, h: Fun}
-  - {t: RET, h: Num}
-  - {t: SPACE, h: Sym}
+  - {t: ESC, h: nav}
+  - {t: BSPC, h: media}
+  - {t: TAB, h: mouse}
+  - {t: DEL, h: fun}
+  - {t: RET, h: num}
+  - {t: SPACE, h: sym}
   - {type: trans}
   - {type: trans}
   - {type: trans}

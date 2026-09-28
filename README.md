@@ -44,7 +44,7 @@ Miryoku-style overview: layers held by a left thumb key only use the right hand 
 
 ![Keymap](keymap-drawer/adv360pro.svg)
 
-Both are generated from the keymap with [keymap-drawer](https://github.com/caksoylar/keymap-drawer). After changing `config/adv360pro.keymap`, run `nix run .#draw` to regenerate the parsed layout (`keymap-drawer/adv360pro.yaml`), the overview (`keymap-drawer/overview.py` builds `adv360pro-overview.yaml`) and both SVGs. Labels for custom behaviors and the theme (one color per layer, used for the title pills, held keys and overview corners; light and dark) live in `keymap-drawer/config.yaml`; `keymap-drawer/pills.py` draws the title pills.
+Both are generated from the keymap with [keymap-drawer](https://github.com/caksoylar/keymap-drawer). After changing `config/adv360pro.keymap`, run `nix run .#draw` to regenerate the parsed layout (`keymap-drawer/adv360pro.yaml`), the overview (`keymap-drawer/overview.py` builds `adv360pro-overview.yaml`) and both SVGs. Labels for custom behaviors and the theme (one color per layer, used for layer names on keys, held keys and overview corners; light and dark) live in `keymap-drawer/config.yaml`; `keymap-drawer/headings.py` centers the layer titles.
 
 
 | # | Layer | How to reach |
