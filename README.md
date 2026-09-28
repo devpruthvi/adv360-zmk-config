@@ -38,9 +38,13 @@ On NixOS the hidraw node needs a udev rule to be readable without root: `KERNEL=
 
 ## Layers
 
+![Keymap overview](keymap-drawer/adv360pro-overview.svg)
+
+Miryoku-style overview: layers held by a left thumb key only use the right hand and vice versa, so each key shows its Base legend in the center, its hold behavior in grey, and the opposite-thumb layers in colored corners. The Button layer and the layer-switch keys are only in the per-layer diagram:
+
 ![Keymap](keymap-drawer/adv360pro.svg)
 
-The diagram is generated from the keymap with [keymap-drawer](https://github.com/caksoylar/keymap-drawer). After changing `config/adv360pro.keymap`, run `nix run .#draw` to regenerate `keymap-drawer/adv360pro.yaml` (the parsed layout) and `keymap-drawer/adv360pro.svg`. Labels for custom behaviors live in `keymap-drawer/config.yaml`.
+Both are generated from the keymap with [keymap-drawer](https://github.com/caksoylar/keymap-drawer). After changing `config/adv360pro.keymap`, run `nix run .#draw` to regenerate the parsed layout (`keymap-drawer/adv360pro.yaml`), the overview (`keymap-drawer/overview.py` builds `adv360pro-overview.yaml`) and both SVGs. Labels for custom behaviors live in `keymap-drawer/config.yaml`.
 
 
 | # | Layer | How to reach |

@@ -1,0 +1,293 @@
+layout:
+  zmk_keyboard: adv360pro
+layers:
+  'Overview - left hand: Sym (green) Fun (red) Num (blue); right hand: Nav (amber) Media (magenta) Mouse (teal); grey: hold':
+  - t: '='
+    type: lh
+  - t: '1'
+    type: lh
+  - t: '2'
+    type: lh
+  - t: '3'
+    type: lh
+  - t: '4'
+    type: lh
+  - t: '5'
+    type: lh
+  - t: ''
+    type: lh
+  - t: ''
+    type: rh
+  - t: '6'
+    type: rh
+  - t: '7'
+    type: rh
+  - t: '8'
+    type: rh
+  - t: '9'
+    type: rh
+  - t: '0'
+    type: rh
+  - t: '-'
+    type: rh
+  - t: TAB
+    type: lh
+  - t: Q
+    type: lh
+    tr: '{'
+    bl: F12
+    br: '['
+  - t: W
+    type: lh
+    tr: '&'
+    bl: F7
+    br: '7'
+  - t: E
+    type: lh
+    tr: '*'
+    bl: F8
+    br: '8'
+  - t: R
+    type: lh
+    tr: (
+    bl: F9
+    br: '9'
+  - t: T
+    type: lh
+    tr: '}'
+    bl: PrtSc
+    br: ']'
+  - t: ''
+    type: lh
+  - t: ''
+    type: rh
+  - t: Y
+    type: rh
+    tr: Redo
+    bl: RGB
+  - t: U
+    type: rh
+    tr: Paste
+    bl: Eff
+  - t: I
+    type: rh
+    tr: Copy
+    bl: Hue
+  - t: O
+    type: rh
+    tr: Cut
+    bl: Sat
+  - t: P
+    type: rh
+    tr: Undo
+    bl: Bri
+  - t: \
+    type: rh
+  - t: ESC
+    type: lh
+  - t: A
+    type: lh
+    tl: LGUI
+    tr: ':'
+    bl: F11
+    br: ;
+  - t: S
+    type: lh
+    tl: LALT
+    tr: $
+    bl: F4
+    br: '4'
+  - t: D
+    type: lh
+    tl: LCTRL
+    tr: '%'
+    bl: F5
+    br: '5'
+  - t: F
+    type: lh
+    tl: LSHFT
+    tr: ^
+    bl: F6
+    br: '6'
+  - t: G
+    type: lh
+    tr: +
+    bl: ScrLk
+    br: '='
+  - t: ''
+    type: lh
+  - t: LCTRL
+    type: lh
+  - t: RCTRL
+    type: lh
+  - t: LGUI
+    type: rh
+  - t: LALT
+    type: rh
+  - t: ''
+    type: rh
+  - t: H
+    type: rh
+    tr: CapsW
+    bl: LEDs
+  - t: J
+    type: rh
+    tl: LSHFT
+    tr: ←
+    bl: Prev
+    br: M←
+  - t: K
+    type: rh
+    tl: LCTRL
+    tr: ↓
+    bl: Vol-
+    br: M↓
+  - t: L
+    type: rh
+    tl: LALT
+    tr: ↑
+    bl: Vol+
+    br: M↑
+  - t: ;
+    type: rh
+    tl: LGUI
+    tr: →
+    bl: Next
+    br: M→
+  - t: ''''
+    type: rh
+  - t: LSHFT
+    type: lh
+  - t: Z
+    type: lh
+    tl: Button
+    tr: '~'
+    bl: F10
+    br: '`'
+  - t: X
+    type: lh
+    tl: RALT
+    tr: '!'
+    bl: F1
+    br: '1'
+  - t: C
+    type: lh
+    tr: '@'
+    bl: F2
+    br: '2'
+  - t: V
+    type: lh
+    tr: '#'
+    bl: F3
+    br: '3'
+  - t: B
+    type: lh
+    tr: '|'
+    bl: Pause
+    br: \
+  - t: LALT
+    type: lh
+  - t: RCTRL
+    type: rh
+  - t: N
+    type: rh
+    tr: Ins
+    bl: Out
+  - t: M
+    type: rh
+    tr: Home
+    bl: BT0
+    br: W←
+  - t: ','
+    type: rh
+    tr: PgDn
+    bl: BT1
+    br: W↓
+  - t: .
+    type: rh
+    tl: RALT
+    tr: PgUp
+    bl: BT2
+    br: W↑
+  - t: /
+    type: rh
+    tl: Button
+    tr: End
+    bl: BT3
+    br: W→
+  - t: RSHFT
+    type: rh
+  - t: ''
+    type: lh
+  - t: '`'
+    type: lh
+  - t: CAPS
+    type: lh
+  - t: LEFT
+    type: lh
+  - t: RIGHT
+    type: lh
+  - t: ESC
+    type: lh
+    tl: Nav
+    tr: (
+    bl: Menu
+    br: .
+  - t: BSPC
+    type: lh
+    tl: Media
+    tr: )
+    bl: Spc
+    br: '0'
+  - t: TAB
+    type: lh
+    tl: Mouse
+    tr: _
+    bl: Tab
+    br: '-'
+  - t: DEL
+    type: rh
+    tl: Fun
+    tr: Ret
+    bl: Stop
+    br: Clk R
+  - t: RET
+    type: rh
+    tl: Num
+    tr: Bspc
+    bl: Play
+    br: Clk L
+  - t: SPACE
+    type: rh
+    tl: Sym
+    tr: Del
+    bl: Mute
+    br: Clk M
+  - t: UP
+    type: rh
+  - t: DOWN
+    type: rh
+  - t: '['
+    type: rh
+  - t: ']'
+    type: rh
+  - t: ''
+    type: rh
+draw_config:
+  key_w: 84
+  key_h: 72
+  svg_extra_style: 'text.tl, text.tr, text.bl, text.br { font-size: 11px; }
+
+    text.tl { fill: #6b7280; }
+
+    .lh text.tr { fill: #16a34a; font-weight: bold; }
+
+    .lh text.bl { fill: #dc2626; font-weight: bold; }
+
+    .lh text.br { fill: #2563eb; font-weight: bold; }
+
+    .rh text.tr { fill: #d97706; font-weight: bold; }
+
+    .rh text.bl { fill: #c026d3; font-weight: bold; }
+
+    .rh text.br { fill: #0891b2; font-weight: bold; }'

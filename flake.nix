@@ -58,14 +58,14 @@
         flakeIgnore = ["E501" "W503"];
       } (builtins.readFile ./cli/adv360_status.py);
 
-      # Regenerates keymap-drawer/adv360pro.{yaml,svg} from the keymap; run from the repo root
+      # Regenerates the keymap-drawer/ diagrams (per layer and overview) from the keymap; run from the repo root
       draw = let
         pkgs = nixpkgs.legacyPackages.${system};
         deps = firmware.westDeps;
       in
         pkgs.writeShellApplication {
           name = "adv360-draw";
-          runtimeInputs = [pkgs.keymap-drawer];
+          runtimeInputs = [pkgs.keymap-drawer (pkgs.python3.withPackages (ps: [ps.pyyaml]))];
           text = ''
             if [ ! -f config/adv360pro.keymap ]; then
               echo "Run this from the root of adv360-zmk-config" >&2
@@ -76,7 +76,11 @@
             KEYMAP_zmk_additional_includes='["${deps}/zmk/app/dts", "${deps}/zmk/app/include"]' \
               keymap -c keymap-drawer/config.yaml draw keymap-drawer/adv360pro.yaml \
               -d ${deps}/zmk/app/boards/kinesis/adv360pro/adv360pro-layouts.dtsi >keymap-drawer/adv360pro.svg
-            echo "Wrote keymap-drawer/adv360pro.yaml and keymap-drawer/adv360pro.svg"
+            python3 keymap-drawer/overview.py keymap-drawer/adv360pro.yaml >keymap-drawer/adv360pro-overview.yaml
+            KEYMAP_zmk_additional_includes='["${deps}/zmk/app/dts", "${deps}/zmk/app/include"]' \
+              keymap -c keymap-drawer/config.yaml draw keymap-drawer/adv360pro-overview.yaml \
+              -d ${deps}/zmk/app/boards/kinesis/adv360pro/adv360pro-layouts.dtsi >keymap-drawer/adv360pro-overview.svg
+            echo "Wrote keymap-drawer/adv360pro{,-overview}.{yaml,svg}"
           '';
         };
 
