@@ -100,5 +100,14 @@
     devShells = forAllSystems (system: {
       default = zmk-nix.devShells.${system}.default;
     });
+
+    # Host side: lets adv360-status read the raw HID status without root (USB and Bluetooth)
+    nixosModules.default = {pkgs, ...}: {
+      services.udev.packages = [
+        (pkgs.writeTextDir "lib/udev/rules.d/70-adv360.rules" ''
+          KERNEL=="hidraw*", KERNELS=="*:1D50:615E.*", TAG+="uaccess"
+        '')
+      ];
+    };
   };
 }

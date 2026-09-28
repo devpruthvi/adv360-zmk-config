@@ -34,7 +34,7 @@ nix run .#adv360-status -- --watch    # print on every change
 nix run .#adv360-status -- --json     # for status bars
 ```
 
-On NixOS the hidraw node needs a udev rule to be readable without root: `KERNEL=="hidraw*", KERNELS=="*:1D50:615E.*", TAG+="uaccess"` in a rules file sorted before `73-seat-late`.
+On NixOS the hidraw node needs a udev rule to be readable without root; import `nixosModules.default` from this flake to add it. To have `adv360-status` on your PATH, add this flake as an input to your system flake and install `packages.<system>.adv360-status`; the firmware itself stays out of the system build.
 
 ## Layers
 
