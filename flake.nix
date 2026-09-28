@@ -80,6 +80,7 @@
             KEYMAP_zmk_additional_includes='["${deps}/zmk/app/dts", "${deps}/zmk/app/include"]' \
               keymap -c keymap-drawer/config.yaml draw keymap-drawer/adv360pro-overview.yaml \
               -d ${deps}/zmk/app/boards/kinesis/adv360pro/adv360pro-layouts.dtsi >keymap-drawer/adv360pro-overview.svg
+            python3 keymap-drawer/pills.py keymap-drawer/adv360pro.svg keymap-drawer/adv360pro-overview.svg
             echo "Wrote keymap-drawer/adv360pro{,-overview}.{yaml,svg}"
           '';
         };

@@ -62,4 +62,69 @@ draw_config:
   dark_mode: auto
   key_w: 60
   key_h: 56
+  key_rx: 8
+  key_ry: 8
+  inner_pad_w: 3
+  inner_pad_h: 3
+  draw_key_sides: true
   append_colon_to_layer_header: false
+  # One color per layer: title pill, held-key tint, and overview corners
+  svg_extra_style: |
+    svg.keymap {
+      --base: #475569; --extra: #4f46e5; --tap: #64748b; --button: #0284c7;
+      --nav: #d97706; --mouse: #0891b2; --media: #c026d3;
+      --num: #2563eb; --sym: #16a34a; --fun: #dc2626;
+      --key-bg: #f8fafc; --key-border: #cbd5e1; --text: #0f172a; --muted: #64748b;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      font-weight: 500;
+      fill: var(--text);
+    }
+    .layer-base { --layer: var(--base); }
+    .layer-extra { --layer: var(--extra); }
+    .layer-tap { --layer: var(--tap); }
+    .layer-button { --layer: var(--button); }
+    .layer-nav { --layer: var(--nav); }
+    .layer-mouse { --layer: var(--mouse); }
+    .layer-media { --layer: var(--media); }
+    .layer-num { --layer: var(--num); }
+    .layer-sym { --layer: var(--sym); }
+    .layer-fun { --layer: var(--fun); }
+    .layer-Overview { --layer: var(--text); }
+
+    /* Layer title: bold white text on a pill of the layer color (pills.py adds the rect) */
+    rect.label-bg { fill: var(--layer); }
+    text.label {
+      font-size: 17px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      fill: white;
+      stroke: none;
+    }
+
+    rect.key { fill: var(--key-bg); stroke: var(--key-border); }
+    rect.side { filter: brightness(93%); }
+    rect.held { fill: var(--layer); fill-opacity: 0.22; }
+    text.hold, text.shifted { fill: var(--muted); font-weight: 600; }
+    .trans text { fill: var(--muted); }
+    text.footer { fill: var(--muted); stroke: none; font-size: 12px; }
+
+    /* Overview (overview.py): hold in grey top-left, opposite-thumb layers in colored corners */
+    .layer-Overview text.tl, .layer-Overview text.tr,
+    .layer-Overview text.bl, .layer-Overview text.br { font-size: 11px; font-weight: 700; }
+    .layer-Overview text.tl { fill: var(--muted); font-weight: 600; }
+    .layer-Overview .lh text.tr { fill: var(--sym); }
+    .layer-Overview .lh text.bl { fill: var(--fun); }
+    .layer-Overview .lh text.br { fill: var(--num); }
+    .layer-Overview .rh text.tr { fill: var(--nav); }
+    .layer-Overview .rh text.bl { fill: var(--media); }
+    .layer-Overview .rh text.br { fill: var(--mouse); }
+
+    @media (prefers-color-scheme: dark) {
+      svg.keymap {
+        --key-bg: #1e293b; --key-border: #334155; --text: #e2e8f0; --muted: #94a3b8;
+        --base: #64748b; --tap: #475569;
+      }
+      rect.key { fill: var(--key-bg); stroke: var(--key-border); }
+      .layer-Overview { --layer: #334155; }
+    }

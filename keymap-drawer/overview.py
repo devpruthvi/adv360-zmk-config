@@ -12,12 +12,10 @@ import yaml
 LEFT_HAND = set(range(0, 7)) | set(range(14, 21)) | set(range(28, 37)) \
     | set(range(46, 53)) | set(range(60, 68))
 
-# corner -> layer, per hand
+# corner -> layer, per hand; colors live in config.yaml under .layer-Overview
 LEFT_CORNERS = {"tr": "sym", "bl": "fun", "br": "num"}
 RIGHT_CORNERS = {"tr": "nav", "bl": "media", "br": "mouse"}
 
-COLORS = {"sym": "#16a34a", "fun": "#dc2626", "num": "#2563eb",
-          "nav": "#d97706", "media": "#c026d3", "mouse": "#0891b2"}
 
 # Short forms so corner legends fit
 SHORT = {
@@ -35,8 +33,8 @@ SHORT = {
     "BSPC": "Bspc", "RET": "Ret", "DEL": "Del", "SPACE": "Spc", "TAB": "Tab",
 }
 
-HEADER = ("Overview - left hand: Sym (green) Fun (red) Num (blue); "
-          "right hand: Nav (amber) Media (magenta) Mouse (teal); grey: hold")
+FOOTER = ("Corners, left hand: Sym green, Fun red, Num blue. "
+          "Right hand: Nav amber, Media magenta, Mouse teal. Grey: hold")
 
 MODS = {"LGUI", "LALT", "LCTRL", "LSHFT", "RALT", "RGUI", "RCTRL", "RSHFT"}
 
@@ -47,12 +45,6 @@ def legend(key):
     if key.get("type") == "trans":
         return "", "", ""
     return key.get("t", ""), key.get("h", ""), key.get("type", "")
-
-
-def corner_style(corners, hand):
-    return "\n".join(
-        f".{hand} text.{pos} {{ fill: {COLORS[layer]}; font-weight: bold; }}"
-        for pos, layer in corners.items())
 
 
 def main():
@@ -77,16 +69,11 @@ def main():
 
     out = {
         "layout": data["layout"],
-        "layers": {HEADER: overview},
+        "layers": {"Overview": overview},
         "draw_config": {
             "key_w": 84,
             "key_h": 72,
-            "svg_extra_style": "\n".join([
-                "text.tl, text.tr, text.bl, text.br { font-size: 11px; }",
-                "text.tl { fill: #6b7280; }",
-                corner_style(LEFT_CORNERS, "lh"),
-                corner_style(RIGHT_CORNERS, "rh"),
-            ]),
+            "footer_text": FOOTER,
         },
     }
     yaml.safe_dump(out, sys.stdout, allow_unicode=True, sort_keys=False)

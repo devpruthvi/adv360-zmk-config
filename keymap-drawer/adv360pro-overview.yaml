@@ -1,7 +1,7 @@
 layout:
   zmk_keyboard: adv360pro
 layers:
-  'Overview - left hand: Sym (green) Fun (red) Num (blue); right hand: Nav (amber) Media (magenta) Mouse (teal); grey: hold':
+  Overview:
   - t: '='
     type: lh
   - t: '1'
@@ -276,18 +276,5 @@ layers:
 draw_config:
   key_w: 84
   key_h: 72
-  svg_extra_style: 'text.tl, text.tr, text.bl, text.br { font-size: 11px; }
-
-    text.tl { fill: #6b7280; }
-
-    .lh text.tr { fill: #16a34a; font-weight: bold; }
-
-    .lh text.bl { fill: #dc2626; font-weight: bold; }
-
-    .lh text.br { fill: #2563eb; font-weight: bold; }
-
-    .rh text.tr { fill: #d97706; font-weight: bold; }
-
-    .rh text.bl { fill: #c026d3; font-weight: bold; }
-
-    .rh text.br { fill: #0891b2; font-weight: bold; }'
+  footer_text: 'Corners, left hand: Sym green, Fun red, Num blue. Right hand: Nav
+    amber, Media magenta, Mouse teal. Grey: hold'
