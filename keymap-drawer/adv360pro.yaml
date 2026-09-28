@@ -1,0 +1,772 @@
+layout: {zmk_keyboard: adv360pro}
+layers:
+  base:
+  - '='
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - ''
+  - ''
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '-'
+  - TAB
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - ''
+  - ''
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - \
+  - ESC
+  - {t: A, h: LGUI}
+  - {t: S, h: LALT}
+  - {t: D, h: LCTRL}
+  - {t: F, h: LSHFT}
+  - G
+  - ''
+  - LCTRL
+  - RCTRL
+  - LGUI
+  - LALT
+  - ''
+  - H
+  - {t: J, h: LSHFT}
+  - {t: K, h: LCTRL}
+  - {t: L, h: LALT}
+  - {t: ;, h: LGUI}
+  - ''''
+  - LSHFT
+  - {t: Z, h: Button}
+  - {t: X, h: RALT}
+  - C
+  - V
+  - B
+  - LALT
+  - RCTRL
+  - N
+  - M
+  - ','
+  - {t: ., h: RALT}
+  - {t: /, h: Button}
+  - RSHFT
+  - ''
+  - '`'
+  - CAPS
+  - LEFT
+  - RIGHT
+  - {t: ESC, h: Nav}
+  - {t: BSPC, h: Media}
+  - {t: TAB, h: Mouse}
+  - {t: DEL, h: Fun}
+  - {t: RET, h: Num}
+  - {t: SPACE, h: Sym}
+  - UP
+  - DOWN
+  - '['
+  - ']'
+  - ''
+  extra:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Q
+  - W
+  - F
+  - P
+  - B
+  - {type: trans}
+  - {type: trans}
+  - J
+  - L
+  - U
+  - Y
+  - ''''
+  - {type: trans}
+  - {type: trans}
+  - {t: A, h: LGUI}
+  - {t: R, h: LALT}
+  - {t: S, h: LCTRL}
+  - {t: T, h: LSHFT}
+  - G
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - M
+  - {t: N, h: LSHFT}
+  - {t: E, h: LCTRL}
+  - {t: I, h: LALT}
+  - {t: O, h: LGUI}
+  - {type: trans}
+  - {type: trans}
+  - {t: Z, h: Button}
+  - {t: X, h: RALT}
+  - C
+  - D
+  - V
+  - {type: trans}
+  - {type: trans}
+  - K
+  - H
+  - ','
+  - {t: ., h: RALT}
+  - {t: /, h: Button}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: ESC, h: Nav}
+  - {t: BSPC, h: Media}
+  - {t: TAB, h: Mouse}
+  - {t: DEL, h: Fun}
+  - {t: RET, h: Num}
+  - {t: SPACE, h: Sym}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  tap:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - {type: trans}
+  - {type: trans}
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {type: trans}
+  - {type: trans}
+  - A
+  - S
+  - D
+  - F
+  - G
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - H
+  - J
+  - K
+  - L
+  - ;
+  - {type: trans}
+  - {type: trans}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - {type: trans}
+  - {type: trans}
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ESC
+  - BSPC
+  - TAB
+  - DEL
+  - RET
+  - SPACE
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  button:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Undo
+  - Cut
+  - Copy
+  - Paste
+  - Redo
+  - {type: trans}
+  - {type: trans}
+  - Redo
+  - Paste
+  - Copy
+  - Cut
+  - Undo
+  - {type: trans}
+  - {type: trans}
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - LSHFT
+  - LCTRL
+  - LALT
+  - LGUI
+  - {type: trans}
+  - {type: trans}
+  - {t: Undo, type: held}
+  - Cut
+  - Copy
+  - Paste
+  - Redo
+  - {type: trans}
+  - {type: trans}
+  - Redo
+  - Paste
+  - Copy
+  - Cut
+  - Undo
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - Click M
+  - Click L
+  - Click R
+  - Click R
+  - Click L
+  - Click M
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  nav:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - {t: Tap, h: 2× tap}
+  - {t: Colemak, h: 2× tap}
+  - {t: Base, h: 2× tap}
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - Redo
+  - Paste
+  - Copy
+  - Cut
+  - Undo
+  - {type: trans}
+  - {type: trans}
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: Caps Word, h: ⇧ Caps}
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - RALT
+  - {t: Num, h: 2× tap}
+  - {t: Nav, h: 2× tap}
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - INS
+  - HOME
+  - PG DN
+  - PG UP
+  - END
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: held}
+  - ''
+  - ''
+  - RET
+  - BSPC
+  - DEL
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  mouse:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: Boot, h: 2× tap}
+  - {t: Tap, h: 2× tap}
+  - {t: Colemak, h: 2× tap}
+  - {t: Base, h: 2× tap}
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - Redo
+  - Paste
+  - Copy
+  - Cut
+  - Undo
+  - {type: trans}
+  - {type: trans}
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - Mouse ←
+  - Mouse ↓
+  - Mouse ↑
+  - Mouse →
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - RALT
+  - {t: Sym, h: 2× tap}
+  - {t: Mouse, h: 2× tap}
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - Wheel ←
+  - Wheel ↓
+  - Wheel ↑
+  - Wheel →
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - ''
+  - {type: held}
+  - Click R
+  - Click L
+  - Click M
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  media:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {t: Boot, h: 2× tap}
+  - {t: Tap, h: 2× tap}
+  - {t: Colemak, h: 2× tap}
+  - {t: Base, h: 2× tap}
+  - Studio
+  - {type: trans}
+  - {type: trans}
+  - RGB on/off
+  - RGB effect
+  - RGB hue
+  - RGB sat
+  - RGB bright
+  - {type: trans}
+  - {type: trans}
+  - LGUI
+  - LALT
+  - LCTRL
+  - LSHFT
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - LED power
+  - PREV
+  - VOL DN
+  - VOL UP
+  - NEXT
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - RALT
+  - {t: Fun, h: 2× tap}
+  - {t: Media, h: 2× tap}
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {t: USB/BLE, h: ⇧ USB}
+  - {t: BT 0, h: ⇧ clear}
+  - {t: BT 1, h: ⇧ clear}
+  - {t: BT 2, h: ⇧ clear}
+  - {t: BT 3, h: ⇧ clear}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - {type: held}
+  - ''
+  - STOP
+  - PP
+  - MUTE
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  num:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '['
+  - '7'
+  - '8'
+  - '9'
+  - ']'
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - {t: Base, h: 2× tap}
+  - {t: Colemak, h: 2× tap}
+  - {t: Tap, h: 2× tap}
+  - {t: Boot, h: 2× tap}
+  - {type: trans}
+  - {type: trans}
+  - ;
+  - '4'
+  - '5'
+  - '6'
+  - '='
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - LSHFT
+  - LCTRL
+  - LALT
+  - LGUI
+  - {type: trans}
+  - {type: trans}
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - \
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - {t: Num, h: 2× tap}
+  - {t: Nav, h: 2× tap}
+  - RALT
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - .
+  - '0'
+  - '-'
+  - ''
+  - {type: held}
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  sym:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - '{'
+  - '&'
+  - '*'
+  - (
+  - '}'
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - {t: Base, h: 2× tap}
+  - {t: Colemak, h: 2× tap}
+  - {t: Tap, h: 2× tap}
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - ':'
+  - $
+  - '%'
+  - ^
+  - +
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - LSHFT
+  - LCTRL
+  - LALT
+  - LGUI
+  - {type: trans}
+  - {type: trans}
+  - '~'
+  - '!'
+  - '@'
+  - '#'
+  - '|'
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - {t: Sym, h: 2× tap}
+  - {t: Mouse, h: 2× tap}
+  - RALT
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - (
+  - )
+  - _
+  - ''
+  - ''
+  - {type: held}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  fun:
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - F12
+  - F7
+  - F8
+  - F9
+  - PSCRN
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - {t: Base, h: 2× tap}
+  - {t: Colemak, h: 2× tap}
+  - {t: Tap, h: 2× tap}
+  - {t: Boot, h: 2× tap}
+  - {type: trans}
+  - {type: trans}
+  - F11
+  - F4
+  - F5
+  - F6
+  - SLCK
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - LSHFT
+  - LCTRL
+  - LALT
+  - LGUI
+  - {type: trans}
+  - {type: trans}
+  - F10
+  - F1
+  - F2
+  - F3
+  - PAUSE BREAK
+  - {type: trans}
+  - {type: trans}
+  - ''
+  - {t: Fun, h: 2× tap}
+  - {t: Media, h: 2× tap}
+  - RALT
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - APP
+  - SPACE
+  - TAB
+  - {type: held}
+  - ''
+  - ''
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}
+  - {type: trans}

@@ -38,6 +38,11 @@ On NixOS the hidraw node needs a udev rule to be readable without root: `KERNEL=
 
 ## Layers
 
+![Keymap](keymap-drawer/adv360pro.svg)
+
+The diagram is generated from the keymap with [keymap-drawer](https://github.com/caksoylar/keymap-drawer). After changing `config/adv360pro.keymap`, run `nix run .#draw` to regenerate `keymap-drawer/adv360pro.yaml` (the parsed layout) and `keymap-drawer/adv360pro.svg`. Labels for custom behaviors live in `keymap-drawer/config.yaml`.
+
+
 | # | Layer | How to reach |
 |---|---|---|
 | 0 | Base (QWERTY) | default |

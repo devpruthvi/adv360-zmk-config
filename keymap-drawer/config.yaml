@@ -1,0 +1,65 @@
+# keymap-drawer settings; used by `nix run .#draw`
+parse_config:
+  raw_binding_map:
+    # Mouse movement macros expand to several tokens, so label them directly
+    "&mmv MOVE_LEFT": "Mouse ←"
+    "&mmv MOVE_DOWN": "Mouse ↓"
+    "&mmv MOVE_UP": "Mouse ↑"
+    "&mmv MOVE_RIGHT": "Mouse →"
+    "&msc SCRL_LEFT": "Wheel ←"
+    "&msc SCRL_DOWN": "Wheel ↓"
+    "&msc SCRL_UP": "Wheel ↑"
+    "&msc SCRL_RIGHT": "Wheel →"
+    "&mkp MB1": "Click L"
+    "&mkp MB2": "Click R"
+    "&mkp MB3": "Click M"
+    # Clipboard (Miryoku default codes)
+    "&kp K_UNDO": "Undo"
+    "&kp K_AGAIN": "Redo"
+    "&kp LC(INS)": "Copy"
+    "&kp LS(INS)": "Paste"
+    "&kp LS(DEL)": "Cut"
+    # Double-tap guards
+    "&u_to_base": {t: "Base", h: "2× tap"}
+    "&u_to_extra": {t: "Colemak", h: "2× tap"}
+    "&u_to_tap": {t: "Tap", h: "2× tap"}
+    "&u_to_nav": {t: "Nav", h: "2× tap"}
+    "&u_to_mouse": {t: "Mouse", h: "2× tap"}
+    "&u_to_media": {t: "Media", h: "2× tap"}
+    "&u_to_num": {t: "Num", h: "2× tap"}
+    "&u_to_sym": {t: "Sym", h: "2× tap"}
+    "&u_to_fun": {t: "Fun", h: "2× tap"}
+    "&u_boot": {t: "Boot", h: "2× tap"}
+    # Shift variants
+    "&u_bt_sel_0": {t: "BT 0", h: "⇧ clear"}
+    "&u_bt_sel_1": {t: "BT 1", h: "⇧ clear"}
+    "&u_bt_sel_2": {t: "BT 2", h: "⇧ clear"}
+    "&u_bt_sel_3": {t: "BT 3", h: "⇧ clear"}
+    "&u_out_tog": {t: "USB/BLE", h: "⇧ USB"}
+    "&u_caps_word": {t: "Caps Word", h: "⇧ Caps"}
+    "&studio_unlock": "Studio"
+    "&rgb_ug RGB_TOG": "RGB on/off"
+    "&rgb_ug RGB_EFF": "RGB effect"
+    "&rgb_ug RGB_HUI": "RGB hue"
+    "&rgb_ug RGB_SAI": "RGB sat"
+    "&rgb_ug RGB_BRI": "RGB bright"
+    "&ext_power EP_TOG": "LED power"
+  # Leave transparent keys blank instead of ▽
+  trans_legend: {t: "", type: trans}
+  layer_legend_map:
+    base: Base
+    extra: Colemak
+    tap: Tap
+    button: Button
+    nav: Nav
+    mouse: Mouse
+    media: Media
+    num: Num
+    sym: Sym
+    fun: Fun
+
+draw_config:
+  dark_mode: auto
+  key_w: 60
+  key_h: 56
+  append_colon_to_layer_header: false

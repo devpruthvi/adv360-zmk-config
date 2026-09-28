@@ -58,6 +58,28 @@
         flakeIgnore = ["E501" "W503"];
       } (builtins.readFile ./cli/adv360_status.py);
 
+      # Regenerates keymap-drawer/adv360pro.{yaml,svg} from the keymap; run from the repo root
+      draw = let
+        pkgs = nixpkgs.legacyPackages.${system};
+        deps = firmware.westDeps;
+      in
+        pkgs.writeShellApplication {
+          name = "adv360-draw";
+          runtimeInputs = [pkgs.keymap-drawer];
+          text = ''
+            if [ ! -f config/adv360pro.keymap ]; then
+              echo "Run this from the root of adv360-zmk-config" >&2
+              exit 1
+            fi
+            KEYMAP_zmk_additional_includes='["${deps}/modules/zmk/helpers/include"]' \
+              keymap -c keymap-drawer/config.yaml parse -z config/adv360pro.keymap >keymap-drawer/adv360pro.yaml
+            KEYMAP_zmk_additional_includes='["${deps}/zmk/app/dts", "${deps}/zmk/app/include"]' \
+              keymap -c keymap-drawer/config.yaml draw keymap-drawer/adv360pro.yaml \
+              -d ${deps}/zmk/app/boards/kinesis/adv360pro/adv360pro-layouts.dtsi >keymap-drawer/adv360pro.svg
+            echo "Wrote keymap-drawer/adv360pro.yaml and keymap-drawer/adv360pro.svg"
+          '';
+        };
+
       # nix run .#flash [left|right]; flash-reset does the same with settings-reset
       flash = nixpkgs.legacyPackages.${system}.callPackage ./nix/flash.nix {
         inherit firmware;
