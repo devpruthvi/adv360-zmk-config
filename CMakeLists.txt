@@ -1,0 +1,5 @@
+if(CONFIG_ADV360_STATUS_REPORT)
+  zephyr_library()
+  zephyr_library_sources(src/status_report.c)
+  zephyr_include_directories(${APPLICATION_SOURCE_DIR}/include)
+endif()

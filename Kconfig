@@ -1,0 +1,10 @@
+config ADV360_STATUS_REPORT
+    bool "Report layer, battery and output state to the host over raw HID"
+    default y
+    depends on ZMK_SPLIT_ROLE_CENTRAL
+    select RAW_HID
+    imply ZMK_SPLIT_BLE_CENTRAL_BATTERY_LEVEL_FETCHING
+
+# Raw HID needs a second USB HID interface
+config USB_HID_DEVICE_COUNT
+    default 2 if ADV360_STATUS_REPORT
